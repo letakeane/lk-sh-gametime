@@ -1,15 +1,19 @@
 var assert = require('chai').assert;
-var Canvas = require('./game.js');
-var Snake = require('./snake.js');
-var Food = require('./food.js');
+var game = require('./game.js');
+var Snake = require('./Snake.js');
+var Food = require('./Food.js');
+var Segment = require('./Segment.js')
+
+
+// repaint snake every time (push new segment into array of segments)
 
 describe ('Canvas', function() {
-  it.skip('should have a width of 800px', function() {
-    assert.equal(canvas.width, 800)
+  it.skip('should have a width of 500px', function() {
+    assert.equal(canvas.width, 500)
   });
 
-  it.skip('should have a height of 800px', function() {
-    assert.equal(canvas.height, 800)
+  it.skip('should have a height of 500px', function() {
+    assert.equal(canvas.height, 500)
   });
 })
 
@@ -50,8 +54,25 @@ describe ('Snake', function() {
     assert.equal(snake.color, 'rgba(74, 142, 41, 1)')
   });
 
-  it.skip('should begin moving on keydown event', function() {
-
+  it.skip('should move down on down arrow keydown event', function() {
+    var snake = new Snake();
+    assert.equal(snake.y, 396)
   });
+
+  it.skip('should move up on up arrow keydown event', function() {
+    var snake = new Snake();
+    assert.equal(snake.y, 394)
+  });
+
+  it.skip('should move left on left arrow keydown event', function() {
+    var snake = new Snake();
+    assert.equal(snake.x, 394)
+  });
+
+  it.skip('should move right on right arrow keydown event', function() {
+    var snake = new Snake();
+    assert.equal(snake.x, 396)
+  });
+
 
 })
