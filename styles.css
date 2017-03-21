@@ -1,3 +1,54 @@
+/*fonts*/
+h1, h2, h3, p {
+  font-family: 'Press Start 2P', cursive;
+  color: #78C23B;
+}
+
+h1 {
+  font-size: 100px;
+  text-align: center;
+  margin: 20px;
+}
+
+h2 {
+  font-size: 40px;
+  text-align: left;
+  margin: 20px;
+}
+
+h3 {
+  font-size: 60px;
+  text-align: center;
+  margin: 20px;
+}
+
+.instruct-title {
+  margin: 50px 20px 0 20px;
+}
+
+p {
+  font-size: 14px;
+  margin: 10px 20px;
+}
+
+
+/*page elements*/
+.game-space {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  display: block;
+  margin: 50px auto;
+}
+
 canvas {
+  border: 1px dashed black;
+}
+
+.game-info {
+  width: 300px;
+  margin-left: 50px;
   border: 1px dashed black;
 }
