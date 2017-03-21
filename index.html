@@ -3,10 +3,24 @@
 <head>
   <meta charset="utf-8">
   <title>Snek</title>
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <canvas id="game" width="500" height="500"></canvas>
+  <h1>SNAKE</h1>
+
+  <section class="game-space">
+    <canvas id="game" width="500" height="500"></canvas>
+
+    <article class="game-info">
+      <h2>SCORE:</h2>
+      <h3><span class="score">0</span></h3>
+      <p class="instruct-title">To play:</p>
+      <p>Use arrow keys to move. Eat food to grow! Don't hit the walls or yourself!</p>
+    </article>
+
+  </section>
+
   <script src="main.bundle.js"></script>
 </body>
 </html>
