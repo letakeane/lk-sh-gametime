@@ -3,16 +3,6 @@ var Snake = require('../lib/Snake.js');
 var Segment = require('../lib/Segment.js')
 var Food = require('../lib/Food.js')
 
-// describe ('Canvas', function() {
-//   it.skip('should have a width of 500px', function() {
-//     assert.equal(canvas.width, 500)
-//   });
-//
-//   it.skip('should have a height of 500px', function() {
-//     assert.equal(canvas.height, 500)
-//   });
-// })
-
 describe ('Segment', function () {
   it('should have a height of 10', function() {
     var segment = new Segment();
@@ -93,6 +83,5 @@ describe ('Snake', function() {
 
     assert.equal(snake.x, 396)
   });
-
 
 })
