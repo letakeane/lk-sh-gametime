@@ -1,5 +1,5 @@
 /*fonts*/
-h1, h2, h3, p {
+h1, h2, h3, p, li {
   font-family: 'Press Start 2P', cursive;
   color: #78C23B;
 }
@@ -26,9 +26,11 @@ h3 {
   margin: 50px 20px 0 20px;
 }
 
-p {
+p, li {
+  text-decoration: none;
   font-size: 14px;
   margin: 10px 20px;
+  line-height: 135%;
 }
 
 
@@ -50,5 +52,6 @@ canvas {
 .game-info {
   width: 300px;
   margin-left: 50px;
+  padding: 20px;
   border: 1px dashed black;
 }
