@@ -1,5 +1,4 @@
 var assert = require('chai').assert;
-var Game = require('../lib/index.js');
 var Snake = require('../lib/Snake.js');
 var Segment = require('../lib/Segment.js')
 var Food = require('../lib/Food.js')
